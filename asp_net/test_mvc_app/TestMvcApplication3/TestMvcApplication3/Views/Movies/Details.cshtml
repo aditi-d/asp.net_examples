@@ -1,0 +1,36 @@
+﻿@model TestMvcApplication3.Models.MoviesDB
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>MoviesDB</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.director)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.director)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
